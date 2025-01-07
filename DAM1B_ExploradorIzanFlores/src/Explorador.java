@@ -33,5 +33,13 @@ public class Explorador {
         this.posicionActual = posicionActual;
     }
 
-    
+    // metodo moverse, me he decantado por hacer un switch porque me parecia la opcion de bucle mas sencilla y facil de ver para este caso
+
+    public void moverse(int direccion) {
+        switch (direccion) {
+            case ARRIBA = {
+                    if ( >)
+            }
+        }
+    }
 }
