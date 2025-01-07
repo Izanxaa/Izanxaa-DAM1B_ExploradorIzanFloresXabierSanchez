@@ -34,11 +34,32 @@ public class Explorador {
     }
 
     // metodo moverse, me he decantado por hacer un switch porque me parecia la opcion de bucle mas sencilla y facil de ver para este caso
-
+    // Con este switch nos aseguramos ademas de que haga la accion de moverse, que no se salga del area
     public void moverse(int direccion) {
         switch (direccion) {
-            case ARRIBA = {
-                    if ( >)
+            case ARRIBA : {
+                // Aseguramos que la fila actual sea mayor a 0
+                if ( posicionActual.getCoordenadaFila() > 0) {
+                    posicionActual.setCoordenadaFila(posicionActual.getCoordenadaFila() - 1);
+                } break;
+            }
+            case ABAJO : {
+                // Aseguramos que la fila actual sea menor a 5
+                if (posicionActual.getCoordenadaFila() < 5) {
+                    posicionActual.setCoordenadaFila(posicionActual.getCoordenadaFila() + 1);
+                } break;
+            }
+            case DERECHA : {
+                // Aseguramos que la fila actual sea menor a 19
+                if (posicionActual.getCoordenadaCol() < 19) {
+                    posicionActual.setCoordenadaCol(posicionActual.getCoordenadaCol() + 1);
+                } break;
+            }
+            case IZQUIERDA : {
+                // Aseguramos que la fila actual sea mayor a 0
+                if (posicionActual.getCoordenadaCol() > 0) {
+                    posicionActual.setCoordenadaCol(posicionActual.getCoordenadaCol() - 1);
+                } break;
             }
         }
     }

@@ -25,5 +25,10 @@ import java.util.Random;
             return posicionActual;
         }
 
+        // Metodo moverse
+
+        public void moverse (int direccion) {
+
+        }
 
     }
