@@ -1,10 +1,8 @@
+import Clases.Posicion;
+
 import java.util.Random;
 
-public class Enemigo {
-    import java.util.Random;
-
     public class Enemigo {
-        private String nombre;
         private Clases.Posicion posicionActual;
 
         public static final int ARRIBA = 1;
@@ -13,24 +11,19 @@ public class Enemigo {
         public static final int IZQUIERDA = 4;
 
         // Constructor
-        public Explorador(String nombre){
-            this.nombre = nombre;
-            Random random = new Random();
-            // Primera columna y fila aleatoria
-            this.posicionActual = new Clases.Posicion(random.nextInt(6), 0);
+        public Enemigo(Clases.Posicion posicion){
+            this.posicionActual = posicion;
         }
 
         // Getters y setters
 
-        public String getNombre() {
-            return nombre;
+        public void setPosicionActual(Posicion posicionActual) {
+            this.posicionActual = posicionActual;
         }
 
-        public Clases.Posicion getPosicionActual() {
+        public Posicion getPosicionActual() {
             return posicionActual;
         }
 
-        public void setPosicionActual(Clases.Posicion posicionActual) {
-            this.posicionActual = posicionActual;
-        }
-}
+
+    }
