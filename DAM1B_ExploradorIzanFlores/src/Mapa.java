@@ -64,6 +64,27 @@ public class Mapa {
             }
             System.out.println();
         }
+        // Bordes superiores
+        System.out.print("  ");
+        for (int j = 0; j < 20; j++) {
+            System.out.print("— ");
+        }
+        System.out.println();
+
+        // Filas con separadores
+        for (int i = 0; i < 6; i++) {
+            System.out.print("| "); // Borde izquierdo
+            for (int j = 0; j < 20; j++) {
+                System.out.print(tablero[i][j] + " ");
+            }
+            System.out.println("|"); // Borde derecho
+        }
+
+        // Bordes inferiores
+        System.out.print("  ");
+        for (int j = 0; j < 20; j++) {
+            System.out.print("— ");
+        }
     }
 
     // Getters

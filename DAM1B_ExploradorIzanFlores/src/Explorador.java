@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Explorador {
     private String nombre;
-    private Clases.Posicion posicionActual;
+    private static Clases.Posicion posicionActual;
 
     public static final int ARRIBA = 1;
     public static final int ABAJO = 2;

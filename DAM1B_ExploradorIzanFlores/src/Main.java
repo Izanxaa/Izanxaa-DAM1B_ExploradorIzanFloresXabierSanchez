@@ -24,8 +24,20 @@ public class Main {
             // Y el comando charAt0 extrae el primer caracter
             char accionJugador = scanner.nextLine().toUpperCase().charAt(0);
 
-            // Mover al jugador
-            Explorador.moverse(accionJugador,mapa);
+/*            boolean moverJugador;
+            char accion) {
+                // Lógica para mover al explorador
+                return false; // Devuelve true si el juego debe terminar
+            }
+
+            public boolean moverEnemigos (explorador) {
+                // Lógica para mover a todos los enemigos
+                // Usa el explorador como parámetro si los enemigos lo necesitan
+                return false; // Devuelve true si el juego debe terminar
+            }*/
+
+
         }
+
     }
 }
