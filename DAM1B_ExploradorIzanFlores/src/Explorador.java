@@ -35,7 +35,7 @@ public class Explorador {
 
     // metodo moverse, me he decantado por hacer un switch porque me parecia la opcion de bucle mas sencilla y facil de ver para este caso
     // Con este switch nos aseguramos ademas de que haga la accion de moverse, que no se salga del area
-    public void moverse(int direccion) {
+    public static void moverse(int direccion, Mapa mapa) {
         switch (direccion) {
             case ARRIBA : {
                 // Aseguramos que la fila actual sea mayor a 0
